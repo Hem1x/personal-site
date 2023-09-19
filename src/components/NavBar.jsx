@@ -7,7 +7,7 @@ import {
   DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
-  PinterestIcon,
+  TelegramIcon,
 } from './Icons';
 import { motion } from 'framer-motion';
 
@@ -41,39 +41,25 @@ const NavBar = () => {
 
       <nav className="flex items-center justify-center flex-wrap">
         <MotionLink
-          href="/"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3">
-          <TwitterIcon />
-        </MotionLink>
-        <MotionLink
-          href="/"
+          href="https://github.com/Hem1x"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3">
           <GithubIcon />
         </MotionLink>
         <MotionLink
-          href="/"
+          href="https://www.linkedin.com/in/alexander-avvakumov-90773528b/"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3">
           <LinkedInIcon />
         </MotionLink>
         <MotionLink
-          href="/"
+          href="https://t.me/alexxAVK"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3">
-          <PinterestIcon />
-        </MotionLink>
-        <MotionLink
-          href="/"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 ml-3">
-          <DribbbleIcon />
+          <TelegramIcon />
         </MotionLink>
       </nav>
 
