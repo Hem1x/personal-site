@@ -21,7 +21,7 @@ const Logo = () => {
           ],
         }}
         className="w-16 h-16 bg-dark text-light flex justify-center items-center rounded-full text-2xl font-bold">
-        CB
+        AV
       </MotionLink>
     </div>
   );
