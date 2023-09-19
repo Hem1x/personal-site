@@ -11,7 +11,10 @@ const Footer = () => {
           Создан{' '}
           <span className="text-primary text-2xl px-1">&#9825;</span>{' '}
           by&nbsp;
-          <Link href="/" className="underline underline-offset-2">
+          <Link
+            href="https://github.com/Hem1x"
+            target={'_blank'}
+            className="underline underline-offset-2">
             Hem1x
           </Link>
         </div>
