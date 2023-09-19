@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import profilePic from '../../public/images/profile/developer-pic-1.png';
+import profilePic from '../../public/images/profile/developer_profile.png';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
@@ -27,27 +27,21 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left mb-2"
+                text="Превращаем идеи в реальность с помощью кода и дизайна."
+                className="!text-5xl !text-left mb-2"
               />
               <p className="my-4 text-base font-medium">
-                As a skilled full-stack developer, I am dedicated to
-                turning ideas into innovative web applications. Explore my
-                latest projects and articles, showcasing my expertise in
-                React.js and web development.
+                Я стремлюсь превращать идеи в инновационные веб-приложения.
+                Изучите мои последние проекты и статьи, демонстрирующие мой
+                опыт в React.js и веб-разработке.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
-                  href="/dummy.pdf"
+                  href="/Аввакумов_Александр_Frontend_developer.pdf"
                   target={'_blank'}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark transition-all duration-200 ease-in-out"
                   download={true}>
-                  Resume <LinkArrow className={'w-6 ml-1'} />
-                </Link>
-                <Link
-                  href="mailto:asdf@gmail.com"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline">
-                  Contact
+                  Резюме <LinkArrow className={'w-6 ml-1'} />
                 </Link>
               </div>
             </div>

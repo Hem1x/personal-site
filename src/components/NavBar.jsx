@@ -33,10 +33,10 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
-        <CustonLink href="/" title="Home" className="mr-4" />
-        <CustonLink href="/about" title="About" className="mx-4" />
-        <CustonLink href="/projects" title="Projects" className="mx-4" />
-        <CustonLink href="/articles" title="Articles" className="ml-4" />
+        <CustonLink href="/" title="Главная" className="mr-4" />
+        <CustonLink href="/about" title="Обо мне" className="mx-4" />
+        <CustonLink href="/projects" title="Проекты" className="mx-4" />
+        <CustonLink href="/articles" title="Статьи" className="ml-4" />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
