@@ -5,6 +5,7 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skills from '@/components/Skills';
 
 const AnimateNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -90,6 +91,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>

@@ -24,6 +24,10 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
+      backgroundImage: {
+        circularLignt:
+          'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px);',
+      },
     },
   },
   plugins: [],
