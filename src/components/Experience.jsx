@@ -48,7 +48,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-64">
+    <div className="my-32">
       <h2 className="font-bold text-8xl mb-32 w-full text-center">Опыт</h2>
 
       <div className="w-[75%] mx-auto relative">
