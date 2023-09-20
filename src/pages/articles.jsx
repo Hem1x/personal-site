@@ -9,6 +9,7 @@ import featuresArticle2 from '../../public/images/articles/create loading screen
 import { motion, useMotionValue } from 'framer-motion';
 import article1 from '../../public/images/articles/create modal component in react using react portals.png';
 import HireMe from '@/components/HireMe';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -114,6 +115,7 @@ const articles = () => {
         <title>Alex | Статьи</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
           <AnimatedText
