@@ -23,6 +23,8 @@ export default function Home() {
                 src={profilePic}
                 alt="portfolio photo"
                 className="w-full h-auto"
+                priority
+                size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
@@ -54,7 +56,13 @@ export default function Home() {
         <HireMe />
 
         <div className="absolute right-8 bottom-8 innline-block w-24">
-          <Image src={lightBulb} alt="name" className="w-full h-auto" />
+          <Image
+            src={lightBulb}
+            alt="name"
+            className="w-full h-auto"
+            priority
+            size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
       </main>
     </>

@@ -61,7 +61,9 @@ const about = () => {
               <Image
                 src={profilePic}
                 alt="photo"
-                className="w-full h-auto rounded-2xl "
+                className="w-full h-auto rounded-2xl"
+                priority
+                size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
 

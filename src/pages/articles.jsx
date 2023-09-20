@@ -50,6 +50,8 @@ const MovingImg = ({ title, img, link }) => {
         src={img}
         alt={title}
         className="w-96 h-auto hidden absolute rounded-lg z-10"
+        priority
+        size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </Link>
   );
