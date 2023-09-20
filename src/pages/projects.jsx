@@ -8,6 +8,9 @@ import Link from 'next/link';
 import React from 'react';
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 import project2 from '../../public/images/projects/portfolio-cover-image.jpg';
+import { motion } from 'framer-motion';
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({
   type,
@@ -24,7 +27,13 @@ const FeaturedProject = ({
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
         <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark" />
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
@@ -57,12 +66,18 @@ const FeaturedProject = ({
 const Project = ({ title, type, img, link, githubLink }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark" />
       <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg">
-        <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark" />
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
@@ -168,7 +183,7 @@ const projects = () => {
           </div>
         </Layout>
       </main>
-      {/* <HireMe /> */}
+      <HireMe />
     </>
   );
 };
