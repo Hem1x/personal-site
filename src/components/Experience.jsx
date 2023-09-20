@@ -64,35 +64,15 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position={`Software Engineer`}
-            company={`Google`}
-            companyLink={`www.google.com`}
-            time={`2022-Present`}
-            address={`Mountain View, CA`}
-            work={`Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization.`}
-          />
-          <Details
-            position={`Intern`}
-            company={`Facebook`}
-            companyLink={`www.facebook.com`}
-            time={`Summer 2021`}
-            address={`Menlo Park, CA`}
-            work={`Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-            share short-form video content, including designing and implementing a new user interface and developing 
-            the backend infrastructure to support the feature.`}
+            position={`Teaching Assistant`}
+            company={`MIT`}
+            companyLink={`www.mit.edu`}
+            time={`Fall 2018`}
+            address={`Massachusetts Ave, Cambridge, MA`}
+            work={`Assisted in teaching a course on computer programming, held office hours to help students with assignments, 
+            and graded exams and assignments.`}
           />
 
-          <Details
-            position={`Software Developer`}
-            company={`Amazon`}
-            companyLink={`www.amazon.com`}
-            time={`2020-2021`}
-            address={`Seattle, WA`}
-            work={`Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
-            as product recommendations and user reviews, and optimizing the app's performance and reliability.`}
-          />
           <Details
             position={`Software Developer Intern`}
             company={`Microsoft`}
@@ -105,13 +85,35 @@ const Experience = () => {
           />
 
           <Details
-            position={`Teaching Assistant`}
-            company={`MIT`}
-            companyLink={`www.mit.edu`}
-            time={`Fall 2018`}
-            address={`Massachusetts Ave, Cambridge, MA`}
-            work={`Assisted in teaching a course on computer programming, held office hours to help students with assignments, 
-            and graded exams and assignments.`}
+            position={`Software Developer`}
+            company={`Amazon`}
+            companyLink={`www.amazon.com`}
+            time={`2020-2021`}
+            address={`Seattle, WA`}
+            work={`Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
+            as product recommendations and user reviews, and optimizing the app's performance and reliability.`}
+          />
+
+          <Details
+            position={`Intern`}
+            company={`Facebook`}
+            companyLink={`www.facebook.com`}
+            time={`Summer 2021`}
+            address={`Menlo Park, CA`}
+            work={`Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
+            share short-form video content, including designing and implementing a new user interface and developing 
+            the backend infrastructure to support the feature.`}
+          />
+
+          <Details
+            position={`Software Engineer`}
+            company={`Google`}
+            companyLink={`www.google.com`}
+            time={`2022-Present`}
+            address={`Mountain View, CA`}
+            work={`Worked on a team responsible for developing new features for Google's 
+            search engine, including improving the accuracy and relevance of search results and 
+            developing new tools for data analysis and visualization.`}
           />
         </ul>
       </div>

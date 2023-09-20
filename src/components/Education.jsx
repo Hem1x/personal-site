@@ -57,19 +57,19 @@ const Education = () => {
           />
 
           <Details
-            type="Master Of Computer Science"
-            time="2020-2022"
-            place="Stanford University"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural 
-            language understanding."
-          />
-
-          <Details
             type="Online Coursework"
             time="2016-2020"
             place="Coursera And EdX"
             info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
             Learning Engineering."
+          />
+
+          <Details
+            type="Master Of Computer Science"
+            time="2020-2022"
+            place="Stanford University"
+            info="Completed a master's project on deep learning, developing a new neural network architecture for natural 
+            language understanding."
           />
         </ul>
       </div>
