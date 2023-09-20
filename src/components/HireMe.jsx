@@ -6,10 +6,19 @@ const HireMe = () => {
   return (
     <div className="fixed left-1 bottom-1 flex items-center justify-center overflow-hidden">
       <div className="w-64 h-auto flex items-center justify-center relative">
-        <CircularText className={'fill-dark animate-spin-slow'} />
+        <CircularText
+          className={'fill-dark dark:fill-light animate-spin-slow'}
+        />
         <Link
           href="https://t.me/alexxAVK"
-          className="flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border border-solid border-dark w-[5.3rem] h-[5.3rem]  rounded-full font-semibold hover:bg-light hover:text-dark transition-all ">
+          className="
+          flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark  text-light  shadow-md border border-solid border-dark w-[5.3rem] h-[5.3rem]  rounded-full font-semibold 
+
+          dark:bg-light dark:text-dark dark:border-transparent
+
+          hover:bg-light hover:text-dark transition-all 
+          hover:dark:bg-dark hover:dark:text-light
+          ">
           Связь
         </Link>
       </div>

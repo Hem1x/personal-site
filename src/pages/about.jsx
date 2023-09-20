@@ -41,7 +41,7 @@ const about = () => {
         <title>Alex | О себе</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center ">
         <Layout className="pt-16">
           <AnimatedText
             text="Страсть подпитывает цель!"
@@ -49,15 +49,15 @@ const about = () => {
           />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Биография
               </h2>
               <p className="font-medium">{`Привет, я молодой разработчик, специализирующийся на React, и имею за плечами год опыта в сфере информационных технологий. Мое отличительное черта - это позитивный настрой и страсть к миру IT. Я всегда готов делиться позитивом и энергией в команде, что помогает нам успешно взаимодействовать и находить нестандартные, инновационные решения для сложных задач.`}</p>
               <p className="my-4 font-medium">{`Мои проекты всегда заканчиваются успешно, и я не боюсь браться за решение проблем, которые могут возникнуть на пути к цели. Я страстно увлечен разработкой на React и всегда стремлюсь к совершенству в этой области.`}</p>
               <p className="font-medium">{`Надеюсь, стать частью вашей команды и вместе достичь отличных результатов, создавая инновационные решения и улучшая пользовательский опыт. Давайте сделаем будущее IT ярче и более успешным вместе!`}</p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl  border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="col-span-3 relative h-max rounded-2xl  border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
                 alt="photo"
@@ -70,7 +70,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimateNumbers value={25} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   завершённых проектов
                 </h2>
               </div>
@@ -79,7 +79,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimateNumbers value={1} /> год
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   опыт разработки
                 </h2>
               </div>
@@ -87,7 +87,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimateNumbers value={100} />%
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   люблю своё дело на
                 </h2>
               </div>

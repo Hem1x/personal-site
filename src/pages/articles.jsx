@@ -8,6 +8,7 @@ import featuresArticle1 from '../../public/images/articles/pagination component 
 import featuresArticle2 from '../../public/images/articles/create loading screen in react js.jpg';
 import { motion, useMotionValue } from 'framer-motion';
 import article1 from '../../public/images/articles/create modal component in react using react portals.png';
+import HireMe from '@/components/HireMe';
 
 const FramerImage = motion(Image);
 
@@ -66,17 +67,19 @@ const Article = ({ img, title, date, link }) => {
         },
       }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4">
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark dark:bg-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light border-r-4 border-b-4">
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4">
+        {date}
+      </span>
     </motion.li>
   );
 };
 
 const FeatuedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark" />
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:text-light dark:border-light">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light " />
       <Link
         href={link}
         target="_blank"
@@ -95,7 +98,9 @@ const FeatuedArticle = ({ img, title, time, summary, link }) => {
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time} min read</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">
+        {time} min read
+      </span>
     </li>
   );
 };
@@ -107,7 +112,7 @@ const articles = () => {
         <title>Alex | Статьи</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
           <AnimatedText
             text="Words Can Change The World!"
@@ -170,7 +175,7 @@ const articles = () => {
           </ul>
         </Layout>
       </main>
-      {/* <HireMe /> */}
+      <HireMe />
     </>
   );
 };
