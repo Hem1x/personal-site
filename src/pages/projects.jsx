@@ -6,8 +6,19 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
-import project2 from '../../public/images/projects/portfolio-cover-image.jpg';
+import {
+  movieHub,
+  calendar,
+  pizza,
+  shipTracker,
+  smartSpend,
+  taillwindNews,
+  weather,
+  defiSite,
+  githubProfiles,
+  cutSpace,
+  timer,
+} from '../../public/images/projects';
 import { motion } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -62,7 +73,7 @@ const FeaturedProject = ({
             href={link}
             target="_blank"
             className="ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold transition-all hover:dark:bg-dark hover:dark:text-light">
-            Visit Project
+            Посмотреть
           </Link>
         </div>
       </div>
@@ -72,7 +83,7 @@ const FeaturedProject = ({
 
 const Project = ({ title, type, img, link, githubLink }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark  dark:border-light bg-light  dark:bg-dark p-6 relative">
+    <article className="w-full h-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark  dark:border-light bg-light  dark:bg-dark p-6 relative">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light" />
       <Link
         href={link}
@@ -104,7 +115,7 @@ const Project = ({ title, type, img, link, githubLink }) => {
             href={link}
             target="_blank"
             className="text-lg font-semibold underline">
-            Visit
+            Посмотреть
           </Link>
           <Link href={githubLink} target="_blank" className="w-8">
             <GithubIcon />
@@ -126,74 +137,115 @@ const projects = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
-            text={`Imagination Trumps Knowledge!`}
+            text={`Креатив превосходит знания!`}
             className="mb-16"
           />
           <div className="grid grid-cols-12 gap-24 pag-y-32">
-            <div className="col-span-12">
+            <div className="col-span-12 flex flex-col gap-24">
               <FeaturedProject
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
-                githubLink="/"
-                type="Featured Project"
+                title="Агрегатор фильмов"
+                img={movieHub}
+                summary="Веб-приложение для истинных ценителей кинематографа, предоставляющее обширную базу данных фильмов, удобные инструменты для поиска, фильтрации и организации вашего кинопросмотра."
+                link="https://movie-hub-kohl.vercel.app/"
+                githubLink="https://github.com/Hem1x/movie-hub"
+                type="#лучшее"
               />
-            </div>
-            <div className="col-span-6">
-              <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                githubLink="/"
-                type="Featured Project"
+              <FeaturedProject
+                title="Картографическое приложение"
+                img={shipTracker}
+                summary="Цифровой сервис для формирования графика работы ледокольного и транспортного флота на Северном морском пути с горизонтом планирования один месяц"
+                link="https://ships-map.vercel.app/"
+                githubLink="https://github.com/Hem1x/ships-map"
+                type="#великолепно"
               />
-            </div>
-            <div className="col-span-6">
-              <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                githubLink="/"
-                type="Featured Project"
+
+              <FeaturedProject
+                title="Финансовое приложение"
+                img={smartSpend}
+                summary="Приложение помогает пользователям отслеживать свои доходы и расходы, устанавливать финансовые цели и получать рекомендации по экономии и инвестированию, может помочь людям лучше управлять своими финансами."
+                link="https://smart-spend-pi.vercel.app/"
+                githubLink="https://github.com/Hem1x/smart-spend"
+                type="#круто"
               />
             </div>
 
-            <div className="col-span-12">
-              <FeaturedProject
-                title="React Portfolio Website"
-                img={project2}
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-                page transitions, cool background effects, unique design and it is mobile responsive."
-                link="/"
-                githubLink="/"
-                type="Featured Project"
+            <div className="col-span-4">
+              <Project
+                title="Интернет-магазин пиццы"
+                img={pizza}
+                link="https://pizza-webshop-eta.vercel.app/"
+                githubLink="https://github.com/Hem1x/pizza-webshop"
+                type="#папаДжонс"
+              />
+            </div>
+            <div className="col-span-4">
+              <Project
+                title="Погодное приложение"
+                img={weather}
+                link="https://weather-app-hem1x.vercel.app/"
+                githubLink="https://github.com/Hem1x/weather-app"
+                type="#полезно"
+              />
+            </div>
+            <div className="col-span-4">
+              <Project
+                title="Информационный сайт DeFi-проекта"
+                img={defiSite}
+                link="https://weather-app-hem1x.vercel.app/"
+                githubLink="https://github.com/Hem1x/weather-app"
+                type="#тренды"
+              />
+            </div>
+
+            <div className="col-span-6">
+              <Project
+                title="Поисковик профилей"
+                img={githubProfiles}
+                link="https://github-profies.vercel.app/"
+                githubLink="https://github.com/Hem1x/github-profies"
+                type="#поиск"
               />
             </div>
             <div className="col-span-6">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                githubLink="/"
-                type="Featured Project"
+                title="Календарь"
+                img={calendar}
+                link="https://calendar-hem1x.vercel.app/"
+                githubLink="https://github.com/Hem1x/calendar"
+                type="#время"
               />
             </div>
-            <div className="col-span-6">
+
+            <div className="col-span-4">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                githubLink="/"
-                type="Featured Project"
+                title="Таймер"
+                img={timer}
+                link="https://countdown-timer-hem1x.vercel.app/"
+                githubLink="https://github.com/Hem1x/countdown-timer"
+                type="#акция"
+              />
+            </div>
+            <div className="col-span-4">
+              <Project
+                title="Одностраничный сайт"
+                img={cutSpace}
+                link="https://sass-practic.vercel.app/"
+                githubLink="https://github.com/Hem1x/sass-practic"
+                type="#душа"
+              />
+            </div>
+            <div className="col-span-4">
+              <Project
+                title="Вёрстка новостного сайта"
+                img={taillwindNews}
+                link="https://tailwindcss-news.vercel.app/"
+                githubLink="https://github.com/Hem1x/tailwindcss-news"
+                type="#новое"
               />
             </div>
           </div>
         </Layout>
       </main>
-      <HireMe />
     </>
   );
 };

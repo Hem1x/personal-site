@@ -39,12 +39,13 @@ const NavBar = () => {
         <CustonLink href="/" title="Главная" className="mr-4" />
         <CustonLink href="/about" title="Обо мне" className="mx-4" />
         <CustonLink href="/projects" title="Проекты" className="mx-4" />
-        <CustonLink href="/articles" title="Статьи" className="ml-4" />
+        <CustonLink href="/achives" title="Достижения" className="ml-4" />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
         <MotionLink
           href="https://github.com/Hem1x"
+          target="_blank"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3">
@@ -52,6 +53,7 @@ const NavBar = () => {
         </MotionLink>
         <MotionLink
           href="https://www.linkedin.com/in/alexander-avvakumov-90773528b/"
+          target="_blank"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3">
@@ -59,6 +61,7 @@ const NavBar = () => {
         </MotionLink>
         <MotionLink
           href="https://t.me/alexxAVK"
+          target="_blank"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3">

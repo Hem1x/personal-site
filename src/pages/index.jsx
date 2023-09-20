@@ -36,8 +36,8 @@ export default function Home() {
               />
               <p className="my-4 text-base font-medium ">
                 Я стремлюсь превращать идеи в инновационные веб-приложения.
-                Изучите мои последние проекты и статьи, демонстрирующие мой
-                опыт в React.js и веб-разработке.
+                Изучите мои последние проекты, демонстрирующие мой опыт в
+                React.js и веб-разработке.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link

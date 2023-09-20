@@ -8,7 +8,6 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
-import HireMe from '@/components/HireMe';
 import TransitionEffect from '@/components/TransitionEffect';
 
 const AnimateNumbers = ({ value }) => {
@@ -89,7 +88,7 @@ const about = () => {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimateNumbers value={100} />%
+                  <AnimateNumbers value={102} />%
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   люблю своё дело на
@@ -102,7 +101,6 @@ const about = () => {
           <Education />
         </Layout>
       </main>
-      <HireMe />
     </>
   );
 };
