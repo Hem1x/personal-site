@@ -1,5 +1,4 @@
 import AnimatedText from '@/components/AnimatedText';
-import HireMe from '@/components/HireMe';
 import { GithubIcon } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import Head from 'next/head';

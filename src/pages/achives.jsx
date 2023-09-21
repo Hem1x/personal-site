@@ -6,7 +6,6 @@ import Link from 'next/link';
 import React, { useRef } from 'react';
 import digital2 from '../../public/images/achives/digital2.png';
 import { motion, useMotionValue } from 'framer-motion';
-import HireMe from '@/components/HireMe';
 import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
