@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import React, { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import LiIncon from './LiIncon';
+import { education } from '@/data/about';
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);
@@ -48,12 +48,15 @@ const Education = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
-          <Details
-            type="Цифровая трансформация, Бакалавр"
-            time="2022-2026"
-            place="Московский политехнический университет (МПУ)"
-            info="Программа ориентирована на подготовку специалистов работающих на стыке информационных технологий, экономики и управленческой деятельности. Формируется системный подход к управлению современными предприятиями на основе цифровых решений."
-          />
+          {education.map((edu) => (
+            <Details
+              key={edu.time}
+              type={edu.type}
+              time={edu.time}
+              place={edu.place}
+              info={edu.info}
+            />
+          ))}
         </ul>
       </div>
     </div>

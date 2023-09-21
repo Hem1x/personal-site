@@ -106,7 +106,7 @@ const articles = () => {
   return (
     <>
       <Head>
-        <title>Alex | Статьи</title>
+        <title>Alex | Достижения</title>
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />

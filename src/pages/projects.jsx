@@ -5,21 +5,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import {
-  movieHub,
-  calendar,
-  pizza,
-  shipTracker,
-  smartSpend,
-  taillwindNews,
-  weather,
-  defiSite,
-  githubProfiles,
-  cutSpace,
-  timer,
-} from '../../public/images/projects';
 import { motion } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
+import { bestProjects } from '@/data/bestProjects';
+import { petProjects } from '@/data/projects';
 
 const FramerImage = motion(Image);
 
@@ -141,107 +130,54 @@ const projects = () => {
           />
           <div className="grid grid-cols-12 gap-24 pag-y-32">
             <div className="col-span-12 flex flex-col gap-24">
-              <FeaturedProject
-                title="Агрегатор фильмов"
-                img={movieHub}
-                summary="Веб-приложение для истинных ценителей кинематографа, предоставляющее обширную базу данных фильмов, удобные инструменты для поиска, фильтрации и организации вашего кинопросмотра."
-                link="https://movie-hub-kohl.vercel.app/"
-                githubLink="https://github.com/Hem1x/movie-hub"
-                type="#лучшее"
-              />
-              <FeaturedProject
-                title="Картографическое приложение"
-                img={shipTracker}
-                summary="Цифровой сервис для формирования графика работы ледокольного и транспортного флота на Северном морском пути с горизонтом планирования один месяц"
-                link="https://ships-map.vercel.app/"
-                githubLink="https://github.com/Hem1x/ships-map"
-                type="#великолепно"
-              />
-
-              <FeaturedProject
-                title="Финансовое приложение"
-                img={smartSpend}
-                summary="Приложение помогает пользователям отслеживать свои доходы и расходы, устанавливать финансовые цели и получать рекомендации по экономии и инвестированию, может помочь людям лучше управлять своими финансами."
-                link="https://smart-spend-pi.vercel.app/"
-                githubLink="https://github.com/Hem1x/smart-spend"
-                type="#круто"
-              />
+              {bestProjects.map((project) => (
+                <FeaturedProject
+                  key={project.title}
+                  title={project.title}
+                  img={project.img}
+                  summary={project.summary}
+                  link={project.link}
+                  githubLink={project.githubLink}
+                  type={project.type}
+                />
+              ))}
             </div>
 
-            <div className="col-span-4">
-              <Project
-                title="Интернет-магазин пиццы"
-                img={pizza}
-                link="https://pizza-webshop-eta.vercel.app/"
-                githubLink="https://github.com/Hem1x/pizza-webshop"
-                type="#папаДжонс"
-              />
-            </div>
-            <div className="col-span-4">
-              <Project
-                title="Погодное приложение"
-                img={weather}
-                link="https://weather-app-hem1x.vercel.app/"
-                githubLink="https://github.com/Hem1x/weather-app"
-                type="#полезно"
-              />
-            </div>
-            <div className="col-span-4">
-              <Project
-                title="Информационный сайт DeFi-проекта"
-                img={defiSite}
-                link="https://weather-app-hem1x.vercel.app/"
-                githubLink="https://github.com/Hem1x/weather-app"
-                type="#тренды"
-              />
-            </div>
+            {petProjects.slice(0, 3).map((el) => (
+              <div className="col-span-4" key={el.title}>
+                <Project
+                  title={el.title}
+                  img={el.img}
+                  link={el.link}
+                  githubLink={el.githubLink}
+                  type={el.type}
+                />
+              </div>
+            ))}
 
-            <div className="col-span-6">
-              <Project
-                title="Поисковик профилей"
-                img={githubProfiles}
-                link="https://github-profies.vercel.app/"
-                githubLink="https://github.com/Hem1x/github-profies"
-                type="#поиск"
-              />
-            </div>
-            <div className="col-span-6">
-              <Project
-                title="Календарь"
-                img={calendar}
-                link="https://calendar-hem1x.vercel.app/"
-                githubLink="https://github.com/Hem1x/calendar"
-                type="#время"
-              />
-            </div>
+            {petProjects.slice(3, 5).map((el) => (
+              <div className="col-span-6" key={el.title}>
+                <Project
+                  title={el.title}
+                  img={el.img}
+                  link={el.link}
+                  githubLink={el.githubLink}
+                  type={el.type}
+                />
+              </div>
+            ))}
 
-            <div className="col-span-4">
-              <Project
-                title="Таймер"
-                img={timer}
-                link="https://countdown-timer-hem1x.vercel.app/"
-                githubLink="https://github.com/Hem1x/countdown-timer"
-                type="#акция"
-              />
-            </div>
-            <div className="col-span-4">
-              <Project
-                title="Одностраничный сайт"
-                img={cutSpace}
-                link="https://sass-practic.vercel.app/"
-                githubLink="https://github.com/Hem1x/sass-practic"
-                type="#душа"
-              />
-            </div>
-            <div className="col-span-4">
-              <Project
-                title="Вёрстка новостного сайта"
-                img={taillwindNews}
-                link="https://tailwindcss-news.vercel.app/"
-                githubLink="https://github.com/Hem1x/tailwindcss-news"
-                type="#новое"
-              />
-            </div>
+            {petProjects.slice(5).map((el) => (
+              <div className="col-span-4" key={el.title}>
+                <Project
+                  title={el.title}
+                  img={el.img}
+                  link={el.link}
+                  githubLink={el.githubLink}
+                  type={el.type}
+                />
+              </div>
+            ))}
           </div>
         </Layout>
       </main>
