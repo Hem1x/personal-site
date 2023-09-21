@@ -1,4 +1,4 @@
-import movieHub from './movieHub.png';
+import movieHub from './moviehub.png';
 import calendar from './calendar.png';
 import pizza from './pizza.png';
 import shipTracker from './shipTracker.png';
