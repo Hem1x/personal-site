@@ -9,6 +9,7 @@ import defiSite from './defi-site.png';
 import githubProfiles from './github-profiles.png';
 import cutSpace from './cutSpace.png';
 import timer from './future.png';
+import neuralNet from './neuralNet.png';
 
 export {
   movieHub,
@@ -22,4 +23,5 @@ export {
   githubProfiles,
   cutSpace,
   timer,
+  neuralNet,
 };

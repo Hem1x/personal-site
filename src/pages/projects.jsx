@@ -130,7 +130,7 @@ const projects = () => {
           />
           <div className="grid grid-cols-12 gap-24 pag-y-32">
             <div className="col-span-12 flex flex-col gap-24">
-              {bestProjects.map((project) => (
+              {bestProjects.slice(0, 2).map((project) => (
                 <FeaturedProject
                   key={project.title}
                   title={project.title}
@@ -166,6 +166,22 @@ const projects = () => {
                 />
               </div>
             ))}
+
+            <div className="col-span-12 flex flex-col gap-24">
+              {bestProjects
+                .slice(2, bestProjects.length)
+                .map((project) => (
+                  <FeaturedProject
+                    key={project.title}
+                    title={project.title}
+                    img={project.img}
+                    summary={project.summary}
+                    link={project.link}
+                    githubLink={project.githubLink}
+                    type={project.type}
+                  />
+                ))}
+            </div>
 
             {petProjects.slice(5).map((el) => (
               <div className="col-span-4" key={el.title}>

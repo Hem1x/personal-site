@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 import digital2 from '../../public/images/achives/digital2.png';
+import digital3 from '../../public/images/achives/digital3.png';
 import { motion, useMotionValue } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -118,6 +119,12 @@ const articles = () => {
               img={digital2}
               title={`Всероссийский хакатон "Цифровой прорыв. Сезон: ИИ"`}
               summary={`Заняли с командой 2 место. Участникам хакатона предстоит создать цифровой сервис для формирования графика работы ледокольного и транспортного флота на Северном морском пути с горизонтом планирования один месяц`}
+              link={'/certificate.pdf'}
+            />
+            <FeatuedArticle
+              img={digital3}
+              title={`Дальневосточный федеральный округ хакатон "Цифровой прорыв. Сезон: ИИ"`}
+              summary={`Заняли с командой 3 место. Участникам хакатона предстоит создать системы распознавания окрашенных деталей и узлов (например при наведении камеры телефона), а также развить решение задачи в сторону отображения дополнительной информации о детали при таком распознавании (например характеристики и тд).`}
               link={'/certificate.pdf'}
             />
           </ul>

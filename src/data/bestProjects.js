@@ -1,10 +1,20 @@
 import {
   movieHub,
+  neuralNet,
   shipTracker,
   smartSpend,
 } from '../../public/images/projects';
 
 export const bestProjects = [
+  {
+    title: 'Фронтенд работы нейронной сети по распознованию объектов',
+    img: neuralNet,
+    summary:
+      'Приложение помогает пользователям использовать камеру телефона или веб-камеру для определения делатей с помощьью ИИ прям в режиме real-time. Также имеется возможность подгрузки любых изображений (файл самостоятельно сжимается) и нейросеть сама определит на фотографии область и саму деталь',
+    link: 'https://hakaton-22-09.vercel.app/',
+    githubLink: 'https://github.com/Hem1x/hakaton_22_09',
+    type: '#вау',
+  },
   {
     title: 'Агрегатор фильмов',
     img: movieHub,
