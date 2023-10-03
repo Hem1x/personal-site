@@ -9,7 +9,7 @@ const Details = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between ">
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between  md:w-[80%]">
       <LiIncon referance={ref} />
       <motion.div
         initial={{ y: 50 }}
@@ -34,20 +34,20 @@ const Education = () => {
 
   return (
     <div className="my-32">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl md:mb-16 sm:text-4xl">
         Образование
       </h2>
 
-      <div className="w-[75%] mx-auto relative">
+      <div className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{
             scaleY: scrollYProgress,
           }}
           ref={ref}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
+          className="absolute left-7 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between ml-4  xs:ml-2">
           {education.map((edu) => (
             <Details
               key={edu.time}

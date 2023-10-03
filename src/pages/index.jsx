@@ -18,28 +18,28 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
-            <div className="w-1/2">
+        <Layout className="pt-0 md:p-16 sm:pt-8">
+          <div className="flex items-center justify-between w-full lg:flex-col">
+            <div className="w-1/2 mr-20 md:w-full md:mx-auto">
               <Image
                 src={profilePic}
                 alt="portfolio photo"
-                className="w-full h-auto"
+                className="w-full  h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center">
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full">
               <AnimatedText
                 text="Превращаем идеи в реальность с помощью кода и дизайна."
-                className="!text-5xl !text-left mb-2"
+                className="!text-5xl !text-left mb-2 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl md:mt-5"
               />
-              <p className="my-4 text-base font-medium ">
+              <p className="my-4 text-base font-medium md:text-center">
                 Я стремлюсь превращать идеи в инновационные веб-приложения.
                 Изучите мои последние проекты, демонстрирующие мой опыт в
                 React.js и веб-разработке.
               </p>
-              <div className="flex items-center self-start mt-2">
+              <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/Аввакумов_Александр_Frontend_developer.pdf"
                   target={'_blank'}
@@ -61,7 +61,7 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt="name"
-            className="w-full h-auto"
+            className="w-full h-auto md:hidden"
             priority
             size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />

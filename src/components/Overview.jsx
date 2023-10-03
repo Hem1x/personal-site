@@ -31,9 +31,9 @@ const AnimateNumbers = ({ value }) => {
 
 const Overview = () => {
   return (
-    <div className="grid w-full grid-cols-8 gap-16">
+    <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
       {/* Biography */}
-      <div className="col-span-3 flex flex-col items-start justify-start">
+      <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2  md:col-span-8">
         <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
           Биография
         </h2>
@@ -43,8 +43,8 @@ const Overview = () => {
       </div>
 
       {/* Photo */}
-      <div className="col-span-3 relative h-max rounded-2xl  border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8">
-        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
+      <div className="col-span-3 relative h-max rounded-2xl  border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8 xl:col-span-4 md:order-1 md:col-span-8">
+        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark dark:bg-light " />
         <Image
           src={profilePic}
           alt="photo"
@@ -55,30 +55,30 @@ const Overview = () => {
       </div>
 
       {/* Stat */}
-      <div className="col-span-2 flex flex-col items-end justify-between">
-        <div className="flex flex-col items-end justify-center">
-          <span className="inline-block text-7xl font-bold">
+      <div className="col-span-2 flex flex-col items-end justify-between sm:justify-center xl:col-span-8 xl:flex-row xl:items-center md:order-3 gap-5 flex-wrap">
+        <div className="flex flex-col items-end justify-center xl:items-center">
+          <span className="inline-block text-7xl md:text-5xl sm:text-4xl xs:text-4xl font-bold">
             <AnimateNumbers value={25} />+
           </span>
-          <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+          <h2 className="text-xl md:text-sm font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center">
             завершённых проектов
           </h2>
         </div>
 
-        <div className="flex flex-col items-end justify-center">
-          <span className="inline-block text-7xl font-bold">
+        <div className="flex flex-col items-end justify-center text-center">
+          <span className="inline-block text-7xl md:text-5xl sm:text-4xl xs:text-4xl font-bold">
             <AnimateNumbers value={1} /> год
           </span>
-          <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+          <h2 className="text-xl md:text-sm  font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center">
             опыт разработки
           </h2>
         </div>
-        <div className="flex flex-col items-end justify-center">
-          <span className="inline-block text-7xl font-bold">
+        <div className="flex flex-col items-end justify-center xl:text-center">
+          <span className="inline-block text-7xl md:text-5xl sm:text-4xl xs:text-4xl font-bold">
             <AnimateNumbers value={102} />%
           </span>
-          <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
-            люблю своё дело на
+          <h2 className="text-xl md:text-sm  font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center xl:w-28">
+            люблю Frontend на
           </h2>
         </div>
       </div>

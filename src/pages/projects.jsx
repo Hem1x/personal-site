@@ -21,12 +21,12 @@ const FeaturedProject = ({
   githubLink,
 }) => {
   return (
-    <article className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light  dark:border-light dark:bg-dark shadow-2xl p-12">
+    <article className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light  dark:border-light dark:bg-dark shadow-2xl p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
-        <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light" />
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
+        <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]" />
         <FramerImage
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -38,19 +38,19 @@ const FeaturedProject = ({
         />
       </Link>
 
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pt-6">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
           {type}
         </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-8">
-          <h2 className="my-2 w-full text-left text-4xl font-bold">
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-lg">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light">
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
@@ -60,7 +60,7 @@ const FeaturedProject = ({
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold transition-all hover:dark:bg-dark hover:dark:text-light">
+            className="ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold transition-all hover:dark:bg-dark hover:dark:text-light sm:px-4 sm:text-base">
             Посмотреть
           </Link>
         </div>
@@ -71,8 +71,8 @@ const FeaturedProject = ({
 
 const Project = ({ title, type, img, link, githubLink }) => {
   return (
-    <article className="w-full h-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark  dark:border-light bg-light  dark:bg-dark p-6 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light" />
+    <article className="w-full h-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark  dark:border-light bg-light  dark:bg-dark p-6 relative xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
@@ -87,14 +87,14 @@ const Project = ({ title, type, img, link, githubLink }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
           {type}
         </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-8">
-          <h2 className="my-2 w-full text-left text-3xl font-bold">
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl  sm:text-lg">
             {title}
           </h2>
         </Link>
@@ -102,10 +102,10 @@ const Project = ({ title, type, img, link, githubLink }) => {
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline">
+            className="text-lg font-semibold underline md:text-base">
             Посмотреть
           </Link>
-          <Link href={githubLink} target="_blank" className="w-8">
+          <Link href={githubLink} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </Link>
         </div>
@@ -126,9 +126,9 @@ const projects = () => {
         <Layout className="pt-16">
           <AnimatedText
             text={`Креатив превосходит знания!`}
-            className="mb-16"
+            className="mb-16 !text-7xl sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 pag-y-32">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12 flex flex-col gap-24">
               {bestProjects.slice(0, 2).map((project) => (
                 <FeaturedProject
@@ -144,7 +144,7 @@ const projects = () => {
             </div>
 
             {petProjects.slice(0, 3).map((el) => (
-              <div className="col-span-4" key={el.title}>
+              <div className="col-span-4 md:col-span-12" key={el.title}>
                 <Project
                   title={el.title}
                   img={el.img}
@@ -156,7 +156,7 @@ const projects = () => {
             ))}
 
             {petProjects.slice(3, 5).map((el) => (
-              <div className="col-span-6" key={el.title}>
+              <div className="col-span-6 md:col-span-12" key={el.title}>
                 <Project
                   title={el.title}
                   img={el.img}
@@ -184,7 +184,7 @@ const projects = () => {
             </div>
 
             {petProjects.slice(5).map((el) => (
-              <div className="col-span-4" key={el.title}>
+              <div className="col-span-4  md:col-span-12" key={el.title}>
                 <Project
                   title={el.title}
                   img={el.img}

@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const HireMe = () => {
   return (
-    <div className="fixed left-1 bottom-1 flex items-center justify-center overflow-hidden">
-      <div className="w-64 h-auto flex items-center justify-center relative">
+    <div className="fixed left-1 bottom-1 flex items-center justify-center overflow-hidden md:right-0 md:left-auto md:-top-5 md:bottom-auto md:absolute">
+      <div className="w-64 h-auto flex items-center justify-center relative md:w-36">
         <CircularText
           className={'fill-dark dark:fill-light animate-spin-slow'}
         />
@@ -18,6 +18,8 @@ const HireMe = () => {
 
           hover:bg-light hover:text-dark transition-all 
           hover:dark:bg-dark hover:dark:text-light
+
+          md:w-12 md:h-12 md:text-[10px]
           ">
           Нанять
         </Link>

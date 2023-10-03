@@ -113,8 +113,11 @@ const articles = () => {
       <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
-          <AnimatedText text="Дорогу осилит идущий!" className="mb-16" />
-          <ul className="grid grid-cols-4 gap-16">
+          <AnimatedText
+            text="Дорогу осилит идущий!"
+            className="mb-16 !text-7xl sm:!text-6xl xs:!text-4xl"
+          />
+          <ul className="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-16">
             <FeatuedArticle
               img={digital2}
               title={`Всероссийский хакатон "Цифровой прорыв. Сезон: ИИ"`}

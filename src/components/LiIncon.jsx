@@ -10,7 +10,7 @@ const LiIncon = ({ referance }) => {
   return (
     <figure className="absolute left-0 stroke-dark dark:stroke-light">
       <svg
-        className="-rotate-90 stroke-[0px]"
+        className="-rotate-90 md:w-[60px] md:h-[60px] xs:w-[40px] xs:h-[40px] stroke-[0px]"
         width={75}
         height={75}
         viewBox="0 0 100 100">
@@ -19,7 +19,7 @@ const LiIncon = ({ referance }) => {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-[5px] fill-light dark:fill-dark"
+          className="stroke-[5px] fill-light dark:fill-dark md:w-[2px] md:left-[30px] xs:left-[20px]"
           style={{
             pathLength: scrollYProgress,
           }}

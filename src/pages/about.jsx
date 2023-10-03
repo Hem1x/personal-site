@@ -16,11 +16,11 @@ const about = () => {
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-col items-center justify-center ">
+      <main className="flex w-full flex-col items-center justify-center relative">
         <Layout className="pt-16">
           <AnimatedText
             text="Страсть подпитывает цель!"
-            className="mb-16"
+            className="mb-16 !text-7xl sm:!text-6xl xs:!text-4xl"
           />
           <Overview />
           <Skills />
