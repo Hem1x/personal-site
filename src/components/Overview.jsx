@@ -67,10 +67,10 @@ const Overview = () => {
 
         <div className="flex flex-col items-end justify-center text-center">
           <span className="inline-block text-7xl md:text-5xl sm:text-4xl xs:text-4xl font-bold">
-            <AnimateNumbers value={1} /> год
+            <AnimateNumbers value={2} /> года
           </span>
           <h2 className="text-xl md:text-sm  font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center">
-            опыт разработки
+            опыта разработки
           </h2>
         </div>
         <div className="flex flex-col items-end justify-center xl:text-center">
